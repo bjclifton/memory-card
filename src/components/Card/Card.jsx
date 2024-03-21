@@ -1,7 +1,7 @@
 import react from "react";
 import "./Card.css";
 
-const Card = ({ key, card, handleClick }) => {
+const Card = ({ card, handleClick }) => {
   return (
     <div className="card" onClick={() => handleClick(card)}>
       <img src={card.sprites.front_default} alt={card.name} />
